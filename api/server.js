@@ -24,8 +24,15 @@ app.listen(port, () => {
 })
 
 //routes
-app.get('/api', (req, res) => {
-    res.send('Hello API')
+app.get('/api/todo', async(req, res) => {
+    try{
+        const todos = await ToDo.find({});
+        res.status(200).json(todos)
+    }        
+    catch(error) {
+        console.log(error.message);
+        res.status(500).json({message:error.message})
+    }
 })
 
 app.post('/api/todo', async(req,res) => {
@@ -34,7 +41,6 @@ app.post('/api/todo', async(req,res) => {
         res.status(200).json(todo)
     }        
     catch(error) {
-        console.log(error.message);
         res.status(500).json({message:error.message})
     }
 })
