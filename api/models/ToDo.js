@@ -3,7 +3,7 @@ const mongoose = require ('mongoose')
 const ToDoSchema = mongoose.Schema ({
     text: {
         type: String,
-        retuired: [true, "Please enter an item to add to the To Do List"]
+        required: [true, "Please enter an item to add to the To Do List"]
     },
     complete:{
         type: Boolean,
