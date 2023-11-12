@@ -45,3 +45,17 @@ app.post('/api/todo', async(req,res) => {
     }
 })
 
+app.patch('/api/todo/:id', async(req,res) => {
+    try{
+        const todo = await ToDo.findById(req.params.id)
+        if(!todo){
+            return res.status(404).json({message: "cannot find item"})
+        }
+        todo.complete = !todo.complete
+        todo.save()
+        res.status(200).json(todo)
+    }        
+    catch(error) {
+        res.status(500).json({message:error.message})
+    }
+})
