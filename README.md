@@ -1,4 +1,4 @@
-# To DO List 
+# To Do List 
 This is a full stack To Do List web application developed using the MERN stack. 
 
 ## Technologies
