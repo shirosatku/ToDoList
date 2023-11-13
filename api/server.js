@@ -1,5 +1,6 @@
 const express = require ('express');
 const mongoose = require ('mongoose')
+const dotenv = require('dotenv').config()
 const ToDo = require('./models/ToDo')
 
 //create express app
@@ -9,7 +10,7 @@ const app = express();
 app.use(express.json())
 
 //connecting to DB
-mongoose.connect('mongodb+srv://shirosatku:123654@shirosatkucluster.2kdmtlh.mongodb.net/ToDoList?retryWrites=true&w=majority')
+mongoose.connect(process.env.MONGODB_URI)
 .then (() => {
     console.log('Connected to database')
 })
@@ -18,7 +19,7 @@ mongoose.connect('mongodb+srv://shirosatku:123654@shirosatkucluster.2kdmtlh.mong
 })
 
 // starting server 
-const port = 5000;
+const port = process.env.PORT || 5000;
 app.listen(port, () => {
     console.log (`Node API is running on port ${port}`);
 })
