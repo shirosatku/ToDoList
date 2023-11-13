@@ -16,11 +16,15 @@ Git bash or similar (available to download:
 
 ## Installations
 1. Clone the repo
-  `git clone`
+  `git clone https://github.com/shirosatku/ToDoList.git`
 3. Create a collection in MongoDB
-4. install NPM packages
-   npm i express
-5. create a .env file and enter the following
+4. Install NPM packages
+   `npm i express`
+   `npm i mongoose`
+6. Create a .env file in the api folder and enter the following
+   * const PORT = "port number"
+   * const DB_URI= "MONGO DB Connection string"
+   
 
 [HTML]: https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white
 
