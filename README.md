@@ -1,4 +1,4 @@
-# ToDoList
+<h1> ToDO List </h1>
 
 ## About
 This is a full stack To-Do List web application developed using the MERN stack. 
