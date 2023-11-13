@@ -4,9 +4,9 @@ This is a full stack To-Do List web application developed using the MERN stack.
 ## Technologies
 * [![React][React.js]][React-url]
 * [![Node][Node.js]][Node-url] 
-* Express.js
-* MongoDB
-
+* [![Express][Express.js]][Express-url] 
+* [![MongoDB][MongoDB.js]][MongoDB-url]
+  
 ## Prerequisites
 IDE e.g. VS code (available to download:
 Node.js (available to download:
@@ -24,4 +24,7 @@ Git bash or similar (available to download:
 [React-url]: https://reactjs.org/
 [Node.js]: https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white
 [Node-url]: https://nodejs.org/en/
-
+[Express.js]: https://img.shields.io/badge/Express.js-404D59?style=for-the-badge
+[Express-url]: https://expressjs.com/]
+[MongoDB.js]: https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white
+[MongoDB-url]: https://www.mongodb.com/
