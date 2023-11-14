@@ -21,9 +21,12 @@ Git bash or similar (available to download:
 4. Install NPM packages
    `npm i express`
    `npm i mongoose`
+   `npm i dotenv`
 6. Create a .env file in the api folder and enter the following
    * const PORT = "port number"
-   * const DB_URI= "MONGO DB Connection string"
+   * const MONGODB_URI= "MONGO DB Connection string"
+7. Run server.js
+   `npm start`
    
 
 [HTML]: https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white
